@@ -2695,7 +2695,10 @@ body::before,body::after{display:none;}
               document.getElementById('intro').classList.add('exit');
               setTimeout(function(){
                 if(_introFinished) return;
-                finishIntroImmediately();
+                _introFinished = true;
+                document.getElementById('intro').style.display = 'none';
+                document.documentElement.style.overflow = '';
+                document.body.style.overflow = '';
                 triggerHero();
               }, 730);
             }, 180);
