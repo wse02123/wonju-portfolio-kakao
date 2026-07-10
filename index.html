@@ -3678,5 +3678,12 @@ window.addEventListener('popstate', function(){
 function openCaseLb(el){var img=el.querySelector('img');if(!img)return;var l=document.getElementById('lb-case');document.getElementById('lb-case-img').src=img.src;l.classList.add('open');document.body.style.overflow='hidden';}
 function closeCaseLb(){var l=document.getElementById('lb-case');if(l){l.classList.remove('open');}document.body.style.overflow='';}
 document.addEventListener('keydown',function(e){if(e.key==='Escape')closeCaseLb();});
-</script></body>
+</script>
+
+<!-- Vercel Web Analytics -->
+<script>
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script defer src="/_vercel/insights/script.js"></script>
+</body>
 </html>
